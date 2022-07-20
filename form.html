@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Барбершоп «Бородинский» - Записаться</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo-link page-header__logo-link--inner" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/svg/logotype-desktop.svg" />
+          <source media="(min-width: 768px)" srcset="/img/svg/logotype-tablet.svg" />
+          <img class="page-header__logo-image" src="/img/svg/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»" />
+        </picture>
+      </a>
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Наши работы</a></li>
+            <li class="site-list__item"><a class="site-list__link site-list__link--active">Записаться</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Контакты</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">HTML Academy</a></li>
+          </ul>
+          <ul class="main-navigation__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__login" href="#">
+                <svg
+                  class="user-list__login-icon"
+                  width="16"
+                  height="16"
+                  version="1.1"
+                  viewBox="0 0 4.2333 4.2333"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g fill="#fff">
+                    <path transform="scale(.26458)" d="m7 7.5591e-8v2l7-1e-7v12h-7v2h9v-16z" />
+                    <path transform="scale(.26458)" d="m7 4v3h-7v2h7v3l4-4z" />
+                  </g>
+                </svg>
+                Войти
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main page-main--inner">
+      <header class="page-title">
+        <h1 class="page-title__title">Запись на стрижку</h1>
+        <a class="page-title__button button" href="index.html">На главную</a>
+      </header>
+      <section class="appointment">
+        <h2 class="visually-hidden">Форма для записи на стрижку</h2>
+        <div class="appointment__wrapper">
+          <form class="form" action="#">
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Ваши контактные данные</legend>
+              <div class="form__initials-container">
+                <input class="form__field" id="last-name" name="last-name" placeholder="Фамилия" type="text" />
+                <input class="form__field" id="first-name" name="first-name" placeholder="Имя" type="text" />
+                <input class="form__field" id="middle-name" name="middle-name" placeholder="Отчество" type="text" />
+              </div>
+              <div class="form__contacts-container">
+                <input class="form__field" id="mobile-phone" name="mobile-phone" placeholder="Контактный телефон" type="tel" />
+                <input class="form__field" id="email" name="email" placeholder="Контактный e-mail" type="email" />
+              </div>
+              <div>
+                <textarea
+                  class="form__textarea"
+                  name="info"
+                  id="form__textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Доп. информация для мастера"></textarea>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--beards">
+              <legend class="form__title">Выберите модель бороды:</legend>
+              <div class="form__beard-container">
+                <input class="form__radio visually-hidden" id="beard-admiral" name="beard-model" type="radio" checked />
+                <label class="form__radio-label form__radio-label--admiral" for="beard-admiral" >адмирал</label>
+                <input class="form__radio visually-hidden" id="beard-logger" name="beard-model" type="radio"/>
+                <label class="form__radio-label form__radio-label--logger" for="beard-logger" >лесоруб</label>
+                <input class="form__radio visually-hidden" id="beard-polar" name="beard-model" type="radio" />
+                <label class="form__radio-label form__radio-label--polar" for="beard-polar">полярник</label>
+                <input class="form__radio visually-hidden" id="beard-boyar" name="beard-model" type="radio" />
+                <label class="form__radio-label form__radio-label--boyar" for="beard-boyar">боярин</label>
+                <input class="form__radio visually-hidden" id="beard-wise" name="beard-model" type="radio" />
+                <label class="form__radio-label form__radio-label--wise" for="beard-wise">мудрец</label>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--services">
+              <legend class="form__title form__title--services">Дополнительные услуги:</legend>
+              <div class="form__service-container">
+                <input class="form__checkbox visually-hidden" id="option-dye-beard" name="color-beard" type="checkbox" checked />
+                <label class="form__checkbox-label" for="option-dye-beard">Подкрасить бороду</label>
+                <input class="form__checkbox visually-hidden" id="option-wind-up-mustache" name="color-" type="checkbox" checked />
+                <label class="form__checkbox-label" for="option-wind-up-mustache">Накрутить усы</label>
+                <input class="form__checkbox visually-hidden" id="option-сomb-beard" name="color-" type="checkbox" />
+                <label class="form__checkbox-label" for="option-сomb-beard">Причесать бороду</label>
+                <input class="form__checkbox visually-hidden" id="option-trim-temples" name="color-" type="checkbox" />
+                <label class="form__checkbox-label" for="option-trim-temples">Подровнять виски</label>
+                <input class="form__checkbox visually-hidden" id="option-remove-gray" name="color-" type="checkbox" />
+                <label class="form__checkbox-label" for="option-remove-gray">Убрать седину</label>
+                <input class="form__checkbox visually-hidden" id="option-bald-spot" name="color-" type="checkbox" />
+                <label class="form__checkbox-label" for="option-bald-spot">Отполировать лысину</label>
+              </div>
+            </fieldset>
+            <input class="form__button button" type="submit" value="Отправить заявку" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer page-footer--inner">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <b class="contacts__title">Барбершоп Бородинский</b>
+          <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+          <a class="contacts__phone" href="tel:+78125556666"> <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66 </a>
+        </div>
+        <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link button" href="#">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay">
+      <section class="modal__login">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Личный кабинет</h2>
+          <p class="modal__text">Введите свой логин и пароль, чтобы войти</p>
+          <form class="modal__form" action="#" method="post">
+            <label class="modal__login-label" for="modal-login">
+              <input class="modal__login-field" id="modal-login" name="modal-login" placeholder="Логин" type="text" />
+            </label>
+            <label class="modal__password-label" for="modal-password">
+              <input class="modal__password-field" id="modal-password" name="modal-password" placeholder="Пароль" type="password" />
+            </label>
+            <p class="modal__restore-container">
+              <input class="modal__checkbox visually-hidden" id="modal-checkbox" name="modal-checkbox" type="checkbox" />
+              <label class="modal__checkbox-label" for="modal-checkbox">Запомните меня</label>
+              <a class="modal__restore" href="#">Я забыл пароль!</a>
+            </p>
+            <p class="modal__button-container">
+              <button class="modal__submit" type="submit">Войти <span class="modal__submit-tablet">в личный кабинет</span></button>
+              <button class="modal__close" type="button">Закрыть</button>
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/modal.js"></script>
+  </body>
+</html>
