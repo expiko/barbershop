@@ -1,10 +1,11 @@
 .vscode/
 node_modules/
 build/
+fonts/*.ttf
 package-lock.json
 package.json
 Gulpfile.js
 .gitattributes
 .editorconfig
 .prettierrc.json
-fonts/*.ttf
+
