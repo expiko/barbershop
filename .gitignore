@@ -1,4 +1,5 @@
 .vscode/
+layout/
 node_modules/
 build/
 fonts/*.ttf
