@@ -38,24 +38,29 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* Mobile — page-header */
 .page-header {
   display: flex;
   flex-direction: column;
 }
+/* Mobile — page-header__logo-link */
 .page-header__logo-link {
   height: 85px;
   text-align: center;
 }
+/* Mobile — page-header__logo-image */
 .page-header__logo-image {
   width: 226px;
   height: 85px;
 }
+/* Mobile — main-navigation */
 .main-navigation {
   position: relative;
   min-height: 51px;
   background-color: #826550;
   width: auto;
 }
+/* Mobile — main-navigation__toggle */
 .main-navigation__toggle {
   position: absolute;
   display: block;
@@ -112,14 +117,17 @@ input[type="radio"].visually-hidden {
 .main-navigation--opened .main-navigation__toggle:active::after {
   box-shadow: rgba(255, 255, 255, 0.3);
 }
+/* Mobile — main-navigation__list */
 .main-navigation__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+/* Mobile — site-list */
 .site-list {
   font-weight: bold;
 }
+/* Mobile — site-list__link */
 .site-list__link {
   display: block;
   padding: 12px 21px;
@@ -141,6 +149,7 @@ input[type="radio"].visually-hidden {
   background-color: #6a4d38;
   border-top-color: #6a4d38;
 }
+/* Mobile — user-list__login */
 .user-list__login {
   position: relative;
   display: block;
@@ -150,6 +159,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #ffffff;
 }
+/* Mobile — user-list__login-icon */
 .user-list__login-icon {
   position: absolute;
   top: 18px;
@@ -157,8 +167,6 @@ input[type="radio"].visually-hidden {
   width: 16px;
   height: 16px;
   opacity: 0.3;
-}
-.user-list__login-icon g {
   fill: #ffffff;
 }
 .stats {
@@ -264,12 +272,13 @@ input[type="radio"].visually-hidden {
 .advantages::after {
   position: absolute;
   content: "";
+  height: 34px;
   left: 0;
   right: 0;
   bottom: -34px;
-  height: 34px;
-  background-image: url(/img/svg/gray-decoration.svg);
+  background-image: url("../img/svg/gray-decoration.svg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .advantages__list {
   margin: 0;
@@ -287,15 +296,15 @@ input[type="radio"].visually-hidden {
   left: calc(50% - (95px / 2));
 }
 .advantages__item--fast::before {
-  content: url(/img/svg/advantage-fast.svg);
+  content: url("../img/svg/advantage-fast.svg");
   height: 94px;
 }
 .advantages__item--cool::before {
-  content: url(/img/svg/advantage-cool.svg);
+  content: url("../img/svg/advantage-cool.svg");
   height: 88px;
 }
 .advantages__item--expensive::before {
-  content: url(/img/svg/advantage-expensive.svg);
+  content: url("../img/svg/advantage-expensive.svg");
   height: 91px;
 }
 .advantages__item:nth-child(n) {
@@ -475,8 +484,9 @@ input[type="radio"].visually-hidden {
   right: 0;
   bottom: -34px;
   height: 34px;
-  background-image: url(/img/svg/white-decoration.svg);
+  background-image: url("../img/svg/white-decoration.svg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .reviews__wrapper {
   padding-top: 27px;
@@ -577,8 +587,9 @@ input[type="radio"].visually-hidden {
   left: 0;
   right: 0;
   bottom: -34px;
-  background-image: url(/img/svg/white-decoration.svg);
+  background-image: url("../img/svg/white-decoration.svg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   z-index: 1;
 }
 .works-item {
@@ -679,20 +690,20 @@ input[type="radio"].visually-hidden {
   top: calc(50% - (20px / 2));
   width: 21px;
   height: 20px;
-  background-image: url("/img/svg/scissors-icon.svg");
+  background-image: url("../img/svg/scissors-icon.svg");
 }
 .works-item__parameter-item--shaving::before {
   top: calc(50% - (21px / 2));
   width: 23px;
   height: 21px;
-  background-image: url("/img/svg/shaving-icon.svg");
+  background-image: url("../img/svg/shaving-icon.svg");
 }
 .works-item__parameter-item--mustache::before {
   top: calc(50% - (12px / 2));
   left: -12px;
   width: 45px;
   height: 12px;
-  background-image: url("/img/svg/mustache-icon.svg");
+  background-image: url("../img/svg/mustache-icon.svg");
 }
 .price {
   position: relative;
@@ -708,7 +719,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   right: 0;
   bottom: -34px;
-  background-image: url(/img/svg/gray-decoration.svg);
+  background-image: url("../img/svg/gray-decoration.svg");
   background-repeat: no-repeat;
 }
 .price__list {
@@ -760,7 +771,7 @@ input[type="radio"].visually-hidden {
   height: 57px;
   top: calc(50% - (57px / 2));
   left: 20px;
-  background-image: url(/img/svg/clock-icon.svg);
+  background-image: url("../img/svg/clock-icon.svg");
   background-size: 58px 57px;
   background-repeat: no-repeat;
 }
@@ -780,7 +791,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   right: 0;
   bottom: -34px;
-  background-image: url(/img/svg/white-decoration.svg);
+  background-image: url("../img/svg/white-decoration.svg");
   background-repeat: no-repeat;
 }
 .form__fieldset {
@@ -902,23 +913,23 @@ input[type="radio"].visually-hidden {
   outline: 2px solid black;
 }
 .form__radio-label--admiral {
-  background-image: url(/img/svg/beard-admiral.svg);
+  background-image: url("../img/svg/beard-admiral.svg");
   background-position: bottom calc(118px - 59px) center;
 }
 .form__radio-label--logger {
-  background-image: url(/img/svg/beard-logger.svg);
+  background-image: url("../img/svg/beard-logger.svg");
   background-position: bottom calc(118px - 78px) center;
 }
 .form__radio-label--polar {
-  background-image: url(/img/svg/beard-polar.svg);
+  background-image: url("../img/svg/beard-polar.svg");
   background-position: bottom calc(118px - 88px) center;
 }
 .form__radio-label--boyar {
-  background-image: url(/img/svg/beard-boyar.svg);
+  background-image: url("../img/svg/beard-boyar.svg");
   background-position: bottom calc(118px - 108px) center;
 }
 .form__radio-label--wise {
-  background-image: url(/img/svg/beard-wise.svg);
+  background-image: url("../img/svg/beard-wise.svg");
   background-position: bottom calc(118px - 115px) center;
 }
 .form__checkbox-label {
@@ -953,7 +964,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
   top: calc(50% - (16px / 2));
   left: 7px;
-  background-image: url(/img/svg/mark-icon.svg);
+  background-image: url("../img/svg/mark-icon.svg");
   background-repeat: no-repeat;
 }
 .form__checkbox:focus + .form__checkbox-label::before {
@@ -1077,13 +1088,13 @@ input[type="radio"].visually-hidden {
   transition: opacity 0.2s linear;
 }
 .social__link--vk::after {
-  background-image: url(/img/svg/vk-icon.svg);
+  background-image: url("../img/svg/vk-icon.svg");
 }
 .social__link--facebook::after {
-  background-image: url(/img/svg/facebook-icon.svg);
+  background-image: url("../img/svg/facebook-icon.svg");
 }
 .social__link--instagram::after {
-  background-image: url(/img/svg/instagram-icon.svg);
+  background-image: url("../img/svg/instagram-icon.svg");
 }
 .copyright__text {
   display: block;
@@ -1149,7 +1160,7 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 15px;
   top: calc(50% - (15px / 2));
-  background-image: url(/img/svg/user-icon.svg);
+  background-image: url("../img/svg/user-icon.svg");
 }
 .modal__password-label {
   margin-bottom: 26px;
@@ -1158,7 +1169,7 @@ input[type="radio"].visually-hidden {
   width: 15px;
   height: 17px;
   top: calc(50% - (17px / 2));
-  background-image: url(/img/svg/password-icon.svg);
+  background-image: url("../img/svg/password-icon.svg");
 }
 .modal__login-field,
 .modal__password-field {
@@ -1238,7 +1249,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
   top: calc(50% - (16px / 2));
   left: 6px;
-  background-image: url(/img/svg/mark-icon.svg);
+  background-image: url("../img/svg/mark-icon.svg");
   background-repeat: no-repeat;
 }
 .modal__restore {
@@ -1378,16 +1389,19 @@ input[type="radio"].visually-hidden {
     display: block;
   }
 }
+/* Tablet */
 @media (min-width: 768px) {
+  /* Tablet — page-header */
   .page-header {
     background-color: #000000;
   }
+  /* Tablet — page-header__logo-link */
   .page-header__logo-link {
     order: 2;
     width: 100%;
     height: 400px;
     background-color: #000000;
-    background-image: url(/img/bg-tablet.jpg);
+    background-image: url("../img/bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1395,6 +1409,7 @@ input[type="radio"].visually-hidden {
   .page-header__logo-link--inner {
     height: 215px;
   }
+  /* Tablet — page-header__logo-image */
   .page-header__logo-image {
     display: block;
     width: 384px;
@@ -1402,14 +1417,17 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     margin-top: 40px;
   }
+  /* Tablet — main-navigation */
   .main-navigation {
     width: auto;
     margin: 0;
     background-color: #000000;
   }
+  /* Tablet — main-navigation__toggle */
   .main-navigation__toggle {
     display: none;
   }
+  /* Tablet — main-navigation__wrapper */
   .main-navigation__wrapper {
     display: flex;
     justify-content: space-between;
@@ -1468,14 +1486,10 @@ input[type="radio"].visually-hidden {
   }
   .user-list__login:hover .user-list__login-icon {
     opacity: 1;
-  }
-  .user-list__login:hover .user-list__login-icon g {
     fill: #826550;
   }
   .user-list__login:active .user-list__login-icon {
     opacity: 0.3;
-  }
-  .user-list__login:active .user-list__login-icon g {
     fill: #ffffff;
   }
   .user-list__login-icon {
@@ -1778,8 +1792,9 @@ input[type="radio"].visually-hidden {
     left: 0;
     right: 0;
     top: -41px;
-    background-image: url(/img/svg/white-decoration-inner-page.svg);
+    background-image: url("../img/svg/white-decoration-inner-page.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   .page-title {
     display: flex;
@@ -2124,13 +2139,14 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .page-header__logo-link {
-    background-image: url(/img/bg-desktop.jpg);
+    background-image: url("../img/bg-desktop.jpg");
   }
 }
+/* Desktop */
 @media (min-width: 1200px) {
   .page-header__logo-link {
     height: 648px;
-    background-image: url(/img/bg-desktop.jpg);
+    background-image: url("../img/bg-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
