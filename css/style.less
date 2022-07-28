@@ -50,6 +50,37 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/* Mobile Buttons */
+.button {
+  display: block;
+  box-sizing: border-box;
+
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #f8f5f2;
+  border: 1px solid #e5ddd5;
+
+  transition: border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
+}
+
+/* Mobile Wrappers */
+.advantages__wrapper,
+.news__wrapper,
+.reviews__wrapper,
+.works__wrapper,
+.price__wrapper,
+.appointment__wrapper,
+.modal__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 /* Mobile — page-header */
 .page-header {
   display: flex;
@@ -174,16 +205,15 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #71543f;
 
   transition: background-color 0.2s linear, border-color 0.2s linear;
-}
-.site-list__link[href] {
-  &:hover {
-    background-color: #755a46;
-    border-top-color: #755a46;
-  }
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #6a4d38;
-    border-top-color: #6a4d38;
+
+  &[href] {
+    &:hover {
+      background-color: #755a46;
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #6a4d38;
+    }
   }
 }
 
@@ -211,6 +241,18 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
   fill: #ffffff;
 }
+
+/* Mobile — page-main */
+.page-main {
+  &--inner {
+    display: block;
+    color: #000000;
+
+    background-color: #f8f5f2;
+  }
+}
+
+/* Mobile — stats */
 .stats {
   // width: 320px;
   // margin: 0 auto;
@@ -219,6 +261,8 @@ input[type="radio"].visually-hidden {
   // Резина
   width: auto;
 }
+
+/* Mobile — stats__header */
 .stats__header {
   padding: 30px 40px 25px 40px;
 
@@ -226,6 +270,8 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
 }
+
+/* Mobile — stats__slogan */
 .stats__slogan {
   display: block;
   margin-bottom: 15px;
@@ -236,6 +282,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Mobile — stats__intro */
 .stats__intro {
   margin: 0;
 
@@ -243,31 +291,38 @@ input[type="radio"].visually-hidden {
   line-height: 27px;
   text-align: center;
 }
+
+/* Mobile — stats__legend */
 .stats__legend {
   display: block;
 
   font-size: 20px;
-}
-.stats__legend--top {
-  display: none;
-}
-.stats__legend--bottom {
-  margin-top: 20px;
-  padding-bottom: 14px;
 
-  text-align: center;
-  color: rgba(255, 255, 255, 0.3);
-}
-.stats__legend sup {
-  top: 0.25em;
+  &--top {
+    display: none;
+  }
+  &--bottom {
+    margin-top: 20px;
+    padding-bottom: 14px;
 
-  font-size: 90%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  & sup {
+    top: 0.25em;
+
+    font-size: 90%;
+  }
 }
+
+/* Mobile — stats__list */
 .stats__list {
   width: 100%;
 
   border-collapse: collapse;
 }
+
+/* Mobile — stats__item */
 .stats__item {
   color: #ffffff;
 
@@ -283,6 +338,8 @@ input[type="radio"].visually-hidden {
     background-color: #404040;
   }
 }
+
+/* Mobile — stats__value */
 .stats__value,
 .stats__field {
   width: 50%;
@@ -296,13 +353,16 @@ input[type="radio"].visually-hidden {
 
   font-size: 40px;
   line-height: 40px;
-}
-.stats__value sup {
-  position: absolute;
-  top: 10px;
 
-  margin-left: 5px;
+  & sup {
+    position: absolute;
+    top: 10px;
+
+    margin-left: 5px;
+  }
 }
+
+/* Mobile — stats__field */
 .stats__field {
   padding-left: 0;
 
@@ -310,21 +370,13 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   text-align: right;
 }
-.advantages__wrapper,
-.news__wrapper,
-.reviews__wrapper,
-.works__wrapper,
-.price__wrapper,
-.appointment__wrapper,
-.modal__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
+
+/* Mobile — slider__input */
 .slider__input {
   display: none;
 }
+
+/* Mobile — advantages */
 .advantages {
   position: relative;
   padding-bottom: 13px;
@@ -343,12 +395,16 @@ input[type="radio"].visually-hidden {
     background-size: 100% 100%;
   }
 }
+
+/* Mobile — advantages__list */
 .advantages__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
+/* Mobile — advantages__item */
 .advantages__item {
   position: relative;
   // min-height: 284px;
@@ -382,6 +438,8 @@ input[type="radio"].visually-hidden {
     display: none;
   }
 }
+
+/* Mobile — advantages__title */
 .advantages__title {
   margin: 0;
   margin-bottom: 13px;
@@ -391,6 +449,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Mobile — advantages__description */
 .advantages__description {
   min-height: 108px;
   margin: 0;
@@ -399,12 +459,16 @@ input[type="radio"].visually-hidden {
   font-size: 20px;
   text-align: center;
 }
+
+/* Mobile — slider__toggles */
 .slider__toggles {
   display: flex;
   justify-content: center;
 
   text-align: center;
 }
+
+/* Mobile — slider__toggle */
 .slider__toggle {
   display: block;
   width: 8px;
@@ -424,7 +488,12 @@ input[type="radio"].visually-hidden {
   &:first-child {
     margin-left: 0;
   }
+  &--reviews {
+    border-color: #353535;
+  }
 }
+
+/* Mobile — news */
 .news {
   padding-top: 68px;
 
@@ -433,9 +502,13 @@ input[type="radio"].visually-hidden {
   background-color: #f8f5f2;
   border-bottom: 1px solid #e5ddd5;
 }
+
+/* Mobile — news__wrapper */
 .news__wrapper {
   padding-bottom: 28px;
 }
+
+/* Mobile — news__title */
 .news__title {
   margin: 0;
   margin-bottom: 27px;
@@ -445,12 +518,16 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Mobile — news__list */
 .news__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
+/* Mobile — news__item */
 .news__item {
   padding-bottom: 19px;
   margin-bottom: 20px;
@@ -464,6 +541,8 @@ input[type="radio"].visually-hidden {
     border-bottom: none;
   }
 }
+
+/* Mobile — news__link */
 .news__link {
   display: flex;
   align-items: flex-start;
@@ -492,6 +571,8 @@ input[type="radio"].visually-hidden {
     border-top-color: #6a4d38;
   }
 }
+
+/* Mobile — news__day */
 .news__day {
   display: block;
   margin-bottom: -10px;
@@ -499,6 +580,8 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   line-height: 30px;
 }
+
+/* Mobile — news__date */
 .news__date {
   position: relative;
   display: block;
@@ -536,38 +619,14 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.wrapper {
-  display: flex;
-}
-
+/* Mobile — news__description */
 .news__description {
   margin: 0;
 
   transition: color 0.2s linear;
 }
-.button {
-  display: block;
-  box-sizing: border-box;
 
-  color: #000000;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  background-color: #f8f5f2;
-  border: 1px solid #e5ddd5;
-
-  transition: border-color 0.2s linear, background-color 0.2s linear, color 0.2s linear;
-
-  // &:hover {
-  //   border-color: #d5c9bd;
-  // }
-  // &:active {
-  //   background-color: #d5c9bd;
-  //   color: rgba(0, 0, 0, 0.3);
-  // }
-}
+/* Mobile — news__to-all */
 .news__to-all {
   padding: 13px 29px;
 
@@ -581,6 +640,8 @@ input[type="radio"].visually-hidden {
     border-color: #d5c9bd;
   }
 }
+
+/* Mobile — reviews */
 .reviews {
   position: relative;
   padding-bottom: 18px;
@@ -602,9 +663,13 @@ input[type="radio"].visually-hidden {
     background-size: 100% 100%;
   }
 }
+
+/* Mobile — reviews__wrapper */
 .reviews__wrapper {
   padding-top: 27px;
 }
+
+/* Mobile — reviews__title */
 .reviews__title {
   margin: 0;
   margin-bottom: 26px;
@@ -614,6 +679,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
 }
+
+/* Mobile — reviews__item */
 .reviews__item {
   min-height: 147px;
   position: relative;
@@ -625,6 +692,8 @@ input[type="radio"].visually-hidden {
     display: none;
   }
 }
+
+/* Mobile — reviews__author-picture */
 .reviews__author-picture {
   position: absolute;
   box-sizing: border-box;
@@ -636,10 +705,14 @@ input[type="radio"].visually-hidden {
 
   border: 1px solid #e5ddd5;
 }
+
+/* Mobile — reviews__author-image */
 .reviews__author-image {
   display: block;
   width: 50px;
 }
+
+/* Mobile — reviews__author-name */
 .reviews__author-name {
   display: block;
   margin-bottom: 12px;
@@ -649,18 +722,22 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   text-align: left;
 }
+
+/* Mobile — reviews__author-text */
 .reviews__author-text {
   margin: 0;
 
   text-align: left;
 }
+
+/* Mobile — reviews__previous */
+/* Mobile — reviews__next */
 .reviews__previous,
 .reviews__next {
   display: none;
 }
-.slider__toggle--reviews {
-  border-color: #353535;
-}
+
+/* Mobile — reviews-input */
 #reviews-input-1:checked ~ .reviews__toggles label[for="reviews-input-1"],
 #reviews-input-2:checked ~ .reviews__toggles label[for="reviews-input-2"],
 #reviews-input-3:checked ~ .reviews__toggles label[for="reviews-input-3"] {
@@ -671,21 +748,21 @@ input[type="radio"].visually-hidden {
 #reviews-input-3:checked ~ .reviews__list .reviews__item:nth-child(3) {
   display: block;
 }
+
+/* Mobile — reviews__write */
 .reviews__write {
   display: none;
 }
-.page-main--inner {
-  display: block;
-  color: #000000;
 
-  background-color: #f8f5f2;
-}
+/* Mobile — page-title */
 .page-title {
   padding-top: 30px;
   padding-bottom: 25px;
 
   background-color: #f8f5f2;
 }
+
+/* Mobile — page-title__title */
 .page-title__title {
   margin: 0;
 
@@ -694,9 +771,13 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Mobile — page-title__button */
 .page-title__button {
   display: none;
 }
+
+/* Mobile — works */
 .works {
   position: relative;
   padding-bottom: 48px;
@@ -719,6 +800,8 @@ input[type="radio"].visually-hidden {
     z-index: 1;
   }
 }
+
+/* Mobile — works-item */
 .works-item {
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -728,7 +811,54 @@ input[type="radio"].visually-hidden {
   &:last-child {
     margin-bottom: 0;
   }
+  &--work-of-month {
+    .works-item__image-wrapper {
+      position: relative;
+      height: 480px;
+
+      &::before {
+        position: absolute;
+        content: "Работа месяца";
+        width: 160px;
+        padding: 12px 5px 11px 23px;
+        box-sizing: border-box;
+
+        left: 0;
+        bottom: 30px;
+
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ffffff;
+
+        background-color: #826550;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 50px;
+        box-sizing: border-box;
+
+        left: 160px;
+        bottom: 30px;
+
+        border: 25px solid transparent;
+        border-top-color: #826550;
+        border-bottom-color: #826550;
+        border-left-width: 0;
+        border-right-width: 6px;
+      }
+    }
+    .works-item__image {
+      height: 480px;
+    }
+  }
 }
+
+/* Mobile — works-item__image-wrapper */
 .works-item__image-wrapper {
   margin: 0;
   height: 176px;
@@ -739,58 +869,19 @@ input[type="radio"].visually-hidden {
   background-color: #e6ded6;
   overflow: hidden;
 }
+
+/* Mobile — works-item__image */
 .works-item__image {
   height: 176px;
 }
-.works-item--work-of-month {
-  .works-item__image-wrapper {
-    position: relative;
-    height: 480px;
 
-    &::before {
-      position: absolute;
-      content: "Работа месяца";
-      width: 160px;
-      padding: 12px 5px 11px 23px;
-      box-sizing: border-box;
-
-      left: 0;
-      bottom: 30px;
-
-      font-size: 20px;
-      line-height: 27px;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-align: center;
-      color: #ffffff;
-
-      background-color: #826550;
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 50px;
-      box-sizing: border-box;
-
-      left: 160px;
-      bottom: 30px;
-
-      border: 25px solid transparent;
-      border-top-color: #826550;
-      border-bottom-color: #826550;
-      border-left-width: 0;
-      border-right-width: 6px;
-    }
-  }
-  .works-item__image {
-    height: 480px;
-  }
-}
+/* Mobile — works-item__review */
 .works-item__review {
   padding: 20px;
   padding-bottom: 0;
 }
+
+/* Mobile — works-item__title */
 .works-item__title {
   margin: 0;
   margin-bottom: 17px;
@@ -798,12 +889,16 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   text-align: left;
 }
+
+/* Mobile — works-item__text */
 .works-item__text {
   margin: 0;
   margin-bottom: 24px;
 
   text-align: left;
 }
+
+/* Mobile — works-item__parameter-list */
 .works-item__parameter-list {
   display: flex;
   flex-wrap: wrap;
@@ -812,6 +907,8 @@ input[type="radio"].visually-hidden {
 
   list-style: none;
 }
+
+/* Mobile — works-item__parameter-item */
 .works-item__parameter-item {
   position: relative;
   margin-right: 26px;
@@ -852,6 +949,8 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/svg/mustache-icon.svg");
   }
 }
+
+/* Mobile — price */
 .price {
   position: relative;
   padding-top: 70px;
@@ -874,12 +973,16 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
   }
 }
+
+/* Mobile — price__list */
 .price__list {
   width: 100%;
   margin-bottom: 30px;
 
   font-size: 20px;
 }
+
+/* Mobile — price__title */
 .price__title {
   margin: 0;
   margin-bottom: 20px;
@@ -890,9 +993,13 @@ input[type="radio"].visually-hidden {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Mobile — price__index */
 .price__index {
   display: none;
 }
+
+/* Mobile — price__field */
 .price__field {
   padding-bottom: 20px;
 
@@ -902,6 +1009,8 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
   }
 }
+
+/* Mobile — price__option */
 .price__option {
   display: none;
 
@@ -911,12 +1020,16 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
   }
 }
+
+/* Mobile — price__value */
 .price__value {
   padding-bottom: 20px;
 
   text-align: right;
   vertical-align: top;
 }
+
+/* Mobile — price__offer */
 .price__offer {
   position: relative;
   padding: 20px 45px 20px 112px;
@@ -938,12 +1051,16 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
   }
 }
+
+/* Mobile — price__offer-text */
 .price__offer-text {
   margin: 0;
 
   font-size: 20px;
   text-align: left;
 }
+
+/* Mobile — appointment */
 .appointment {
   position: relative;
   padding-bottom: 40px;
@@ -959,8 +1076,11 @@ input[type="radio"].visually-hidden {
 
     background-image: url("../img/svg/white-decoration.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
+
+/* Mobile — form__fieldset */
 .form__fieldset {
   margin: 0;
   margin-bottom: 40px;
@@ -968,6 +1088,8 @@ input[type="radio"].visually-hidden {
 
   border: 0;
 }
+
+/* Mobile — form__title */
 .form__title {
   margin-bottom: 38px;
 
@@ -975,6 +1097,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
 }
+
+/* Mobile — form__beard-container */
 .form__beard-container {
   display: flex;
   flex-wrap: wrap;
