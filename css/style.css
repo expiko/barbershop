@@ -1054,6 +1054,7 @@ input[type="radio"].visually-hidden {
 .form__button:disabled {
   background-color: #aeaeae;
 }
+/* Mobile — page-footer */
 .page-footer {
   padding-top: 70px;
   padding-bottom: 24px;
@@ -1138,11 +1139,12 @@ input[type="radio"].visually-hidden {
 }
 .social__link {
   position: relative;
+  display: block;
+  width: 107px;
+  height: 101px;
 }
 .social__link::after {
   position: absolute;
-  display: block;
-  box-sizing: border-box;
   content: "";
   width: 107px;
   height: 101px;
